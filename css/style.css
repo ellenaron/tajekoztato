@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: headeranimate 20s infinite ease-in-out;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    flex-direction: column;
+    height: inherit;
+    padding: 0px 30px 0px 30px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+}
+
+.container h1 {
+    margin: 0;
+}
+
+/* animations */
+
+@keyframes headeranimate {
+    0% {
+        background-image: url(../img/fooldalheader/mig-31k-orosz-hiperszonikus-vadaszgepek-oroszorszag-moszkva-voros-ter-a-gyozelem-napja-512649.jpg);
+    }
+    50% {
+        background-image: url(../img/fooldalheader/R.jpg);
+    }
+    100% {
+        background-image: url(../img/fooldalheader/mig-31k-orosz-hiperszonikus-vadaszgepek-oroszorszag-moszkva-voros-ter-a-gyozelem-napja-512649.jpg);
+    }
+}
