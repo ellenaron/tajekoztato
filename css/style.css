@@ -38,6 +38,41 @@ header {
     margin: 0;
 }
 
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 173, 50);
+}
+
+.nav-items ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+}
+
+.nav-items li {
+    float: right;
+}
+
+.nav-items a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+    text-align: center;
+}
+
+.nav-items a:hover {
+    background-color: rgb(201, 136, 39);
+}
+
 /* animations */
 
 @keyframes headeranimate {
