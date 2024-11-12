@@ -213,7 +213,7 @@ main {
     }
 }
 
-@media (max-width:450px) {
+@media (max-width:650px) {
     .picturteonright img {
         float: none;
         margin: 0px;
