@@ -3,16 +3,11 @@
 html {
     scroll-behavior: smooth;
     font-family: 'Roboto', sans-serif;
-    text-align: justify;
 }
 
 body {
     margin: 0px;
     width: 100%;
-}
-
-.bevezeto {
- margin: 20px;
 }
 
 header {
@@ -106,7 +101,7 @@ nav {
 }
 
 .collapsed-nav.active {
-    height: 245px;
+    height: 196px;
 }
 
 .nav-items a:hover, .collapsed-nav a:hover {
@@ -115,8 +110,12 @@ nav {
 
 /* bevezeto */
 
+main {
+    margin: 20px;
+}
+
 .bg h1 {
-    margin-left: 20px;
+    margin: 20px;
 }
 
 .bg {
@@ -126,21 +125,22 @@ nav {
     justify-content: flex-start;
     align-items: flex-end;
     transition: .3s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .picturteonright img {
     float: right;
     width: 400px;
     margin-left: 20px;
+    margin-bottom: 20px;
 }
 
 .pageitems {
     margin-top: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    margin-bottom: 20px;
 }
 
 .levego, .fold, .viz {
@@ -160,10 +160,6 @@ nav {
 .levego h1, .fold h1, .viz h1 {
     color: transparent;
     transition: .3s ease-in-out;
-}
-
-.levego:hover .bg, .fold:hover .bg, .viz:hover .bg {
-    background-color: rgba(0, 0, 0, 0.6);
 }
 
 .levego:hover h1, .fold:hover h1, .viz:hover h1 {
@@ -205,5 +201,22 @@ nav {
 @media (max-width:725px) {
     .nav-items a {
         display: none;
+    }
+
+    .pageitems {
+        flex-direction: column;
+    }
+
+    .levego, .fold, .viz {
+        width: 90vw;
+        height: 90vw;
+    }
+}
+
+@media (max-width:450px) {
+    .picturteonright img {
+        float: none;
+        margin: 0px;
+        width: 100%;
     }
 }
