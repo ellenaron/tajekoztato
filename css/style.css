@@ -65,11 +65,19 @@ nav {
     float: right;
 }
 
-.nav-items ul li button {
+.collbtn{
     width: 49px;
     height: 49px;
     background-color: transparent;
     border: none;
+    background-image: url(../svg/menu_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg);
+    background-size: 34px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.collbtn.active {
+    background-image: url(../svg/close_24dp_5F6368_FILL0_wght400_GRAD0_opsz24.svg);
 }
 
 .nav-items ul li button:hover {
@@ -87,10 +95,18 @@ nav {
 
 .nav-items {
     width: 100%;
+    height: 49px;
 }
 
 .collapsed-nav {
     width: 100%;
+    height: 0px;
+    overflow: hidden;
+    transition: .3s ease-in-out;
+}
+
+.collapsed-nav.active {
+    height: 245px;
 }
 
 .nav-items a:hover, .collapsed-nav a:hover {
@@ -177,5 +193,17 @@ nav {
     }
     100% {
         background-image: url(../img/fooldalheader/mig-31k-orosz-hiperszonikus-vadaszgepek-oroszorszag-moszkva-voros-ter-a-gyozelem-napja-512649.jpg);
+    }
+}
+
+@media (min-width:726px) {
+    .collbtn {
+        display: none;
+    }
+}
+
+@media (max-width:725px) {
+    .nav-items a {
+        display: none;
     }
 }
