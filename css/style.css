@@ -8,6 +8,11 @@ html {
 
 body {
     margin: 0px;
+    width: 100%;
+}
+
+.bevezeto {
+ margin: 20px;
 }
 
 header {
@@ -20,9 +25,11 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
+    width: 100%;
 }
 
 .container {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: baseline;
@@ -45,13 +52,13 @@ nav {
     align-items: center;
     flex-direction: column;
     background-color: rgb(255, 173, 50);
+    width: 100%;
 }
 
 .nav-items ul, .collapsed-nav ul {
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    width: 100vw;
 }
 
 .nav-items li {
@@ -61,6 +68,12 @@ nav {
 .nav-items ul li button {
     width: 49px;
     height: 49px;
+    background-color: transparent;
+    border: none;
+}
+
+.nav-items ul li button:hover {
+    background-color: rgb(201, 136, 39);
 }
 
 .nav-items a, .collapsed-nav a {
@@ -72,14 +85,31 @@ nav {
     text-align: center;
 }
 
+.nav-items {
+    width: 100%;
+}
+
+.collapsed-nav {
+    width: 100%;
+}
+
 .nav-items a:hover, .collapsed-nav a:hover {
     background-color: rgb(201, 136, 39);
 }
 
 /* bevezeto */
 
-main {
-    padding: 20px;
+.bg h1 {
+    margin-left: 20px;
+}
+
+.bg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    transition: .3s ease-in-out;
 }
 
 .picturteonright img {
@@ -89,14 +119,51 @@ main {
 }
 
 .pageitems {
+    margin-top: 20px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    width: 100vw;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .levego, .fold, .viz {
-    width: 30%;
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    justify-content: baseline;
+    align-items: flex-end;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    padding: 0;
+    text-decoration: none;
+}
+
+.levego h1, .fold h1, .viz h1 {
+    color: transparent;
+    transition: .3s ease-in-out;
+}
+
+.levego:hover .bg, .fold:hover .bg, .viz:hover .bg {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.levego:hover h1, .fold:hover h1, .viz:hover h1 {
+    color: white;
+}
+
+.levego {
+    background-image: url(../img/elemek/tornado-und-eurofighter.jpg);
+}
+
+.fold {
+    background-image: url(../img/elemek/https___cloudfront-us-east-2.images.arcpublishing.com_reuters_M3NCZORW3RIMVMY6Y2PJWX2Y4M.avif);
+}
+
+.viz {
+    background-image: url(../img/elemek/k__ap20220126221-e1644320107708.jpg);
 }
 
 /* animations */
