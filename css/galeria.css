@@ -7,7 +7,7 @@ html {
 
 body {
     margin: 0px;
-    width: 100%;
+    height: 100vh;
 }
 
 header {
@@ -38,10 +38,9 @@ header {
     margin: 0;
 }
 
+/* navbar */
+
 nav {
-    position: sticky;
-    top: 0;
-    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,94 +107,6 @@ nav {
     background-color: rgb(201, 136, 39);
 }
 
-/* bevezeto */
-
-main {
-    margin: 20px;
-}
-
-.bg h1 {
-    margin: 20px;
-}
-
-.bg {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    transition: .3s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.6);
-}
-
-.picturteonright img {
-    float: right;
-    width: 400px;
-    margin-left: 20px;
-    margin-bottom: 20px;
-}
-
-.picturteonright p {
-    font-size: larger;
-}
-
-.pageitems {
-    margin-top: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.levego, .fold, .viz {
-    width: 30vw;
-    height: 30vw;
-    display: flex;
-    justify-content: baseline;
-    align-items: flex-end;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    padding: 0;
-    text-decoration: none;
-}
-
-.levego h1, .fold h1, .viz h1 {
-    color: transparent;
-    transition: .3s ease-in-out;
-}
-
-.levego:hover h1, .fold:hover h1, .viz:hover h1 {
-    color: white;
-}
-
-.levego {
-    background-image: url(../img/elemek/tornado-und-eurofighter.jpg);
-}
-
-.fold {
-    background-image: url(../img/elemek/https___cloudfront-us-east-2.images.arcpublishing.com_reuters_M3NCZORW3RIMVMY6Y2PJWX2Y4M.avif);
-}
-
-.viz {
-    background-image: url(../img/elemek/k__ap20220126221-e1644320107708.jpg);
-}
-
-/* animations */
-
-@keyframes headeranimate {
-    0% {
-        background-image: url(../img/fooldalheader/mig-31k-orosz-hiperszonikus-vadaszgepek-oroszorszag-moszkva-voros-ter-a-gyozelem-napja-512649.jpg);
-    }
-    50% {
-        background-image: url(../img/fooldalheader/R.jpg);
-    }
-    100% {
-        background-image: url(../img/fooldalheader/mig-31k-orosz-hiperszonikus-vadaszgepek-oroszorszag-moszkva-voros-ter-a-gyozelem-napja-512649.jpg);
-    }
-}
-
 @media (min-width:726px) {
     .collbtn {
         display: none;
@@ -206,22 +117,30 @@ main {
     .nav-items a {
         display: none;
     }
-
-    .pageitems {
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .levego, .fold, .viz {
-        width: 90vw;
-        height: 90vw;
-    }
 }
 
-@media (max-width:650px) {
-    .picturteonright img {
-        float: none;
-        margin: 0px;
-        width: 100%;
-    }
+/* content */
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.left {
+    width: 70%;
+    height: 100%;
+}
+
+.right {
+    height: 100%;
+}
+
+.felso, .also {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
 }

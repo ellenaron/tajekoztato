@@ -1,0 +1,3 @@
+rgba(0, 0, 0, 0.6) atlatszo fekete
+rgb(201, 136, 39) navbar sotet
+rgb(255, 173, 50) navbar vilagos
