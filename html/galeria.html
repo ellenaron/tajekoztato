@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galéria</title>
     <link rel="stylesheet" href="../css/galeria.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -33,23 +34,23 @@
 
         <div class="legi">
             <div class="bgshade">
-                <h1>Légi Járművek</h1>
-                <a href="legi.html">
+                <h1 data-aos="fade-up">Légi Járművek</h1>
+                <a data-aos="fade-up" href="legi.html">
                     <button></button>
                 </a>
             </div>
         </div>
         <div class="foldi">
             <div class="bgshade">
-                <h1>Földi Járművek</h1>
-                <a href="foldi.html">
+                <h1 data-aos="fade-up">Földi Járművek</h1>
+                <a data-aos="fade-up" href="foldi.html">
                     <button></button>
                 </a>
             </div>
         </div>
         <div class="vizi">
             <div class="bgshade">
-                <h1>Vízi Járművek</h1>
+                <h1 data-aos="fade-up">Vízi Járművek</h1>
                 <a href="vizi.html">
                     <button></button>
                 </a>
@@ -59,6 +60,10 @@
     </main>
 
     <script src="../js/navbar.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     
 </body>
 </html>
