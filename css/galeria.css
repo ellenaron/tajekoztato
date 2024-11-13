@@ -146,6 +146,14 @@ main {
     background-image: url(../img/galeriamenuimages/vadaszgep.jpg);
 }
 
+.foldi {
+    background-image: url(../img/galeriamenuimages/foldi.jpg);
+}
+
+.vizi {
+    background-image: url(../img/galeriamenuimages/vizi.jpg);
+}
+
 .bgshade {
     display: flex;
     justify-content: space-between;
