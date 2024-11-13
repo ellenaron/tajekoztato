@@ -7,7 +7,6 @@ html {
 
 body {
     margin: 0px;
-    height: 100vh;
 }
 
 header {
@@ -41,6 +40,9 @@ header {
 /* navbar */
 
 nav {
+    position: sticky;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,22 +127,49 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    flex-direction: column;
 }
 
-.left {
-    width: 70%;
-    height: 100%;
-}
-
-.right {
-    height: 100%;
-}
-
-.felso, .also {
-    height: 50%;
-    width: 100%;
+.legi, .foldi, .vizi {
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: baseline;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.legi {
+    background-image: url(../img/galeriamenuimages/vadaszgep.jpg);
+}
+
+.bgshade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+}
+
+.bgshade button {
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    background-image: url(../svg/nyilfeher.svg);
+    background-size: cover;
+    background-repeat: no repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.bgshade button:hover {
+    background-color: rgba(0, 0, 0, 0.6);
 }
